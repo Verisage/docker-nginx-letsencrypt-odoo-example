@@ -59,8 +59,8 @@ services:
     restart: always
     image: postgres:9.6
     environment:
-      - POSTGRES_PASSWORD=sample_password
-      - POSTGRES_USER=sample_user
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
       - odoo-db-data:/var/lib/postgresql/data/pgdata
